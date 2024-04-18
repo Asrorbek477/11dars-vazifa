@@ -1,12 +1,18 @@
 
 import { Outlet } from "react-router-dom";
+
+// components
 import Navbar from "../components/Navbar";
+import ThemeContainer from "../components/ThemeContainer"
 
 function MainLayout() {
   return (
     <>
       <Navbar />
-      <main></main>
+      <ThemeContainer/>
+      <main className="align-element">
+      <Outlet/>
+      </main>
     </>
   );
 }
